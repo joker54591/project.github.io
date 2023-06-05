@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>購物網站</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huaging.com/">
+    <meta property="og:title" content="購物網站">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link href="assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+
+
+    <script src="assets/fontawesome-free-6.3.0-web/js/all.min.js"></script>
+
+
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <div class="container" id="coffe">
+        <h5 class="title mb-3">填寫資料
+        </h5>
+        <div class="checkout-nav">
+            <div class="circle-container">
+                <div class="shope">
+                    <div class="circle ">
+                        <a href="checkout.html">1</a>
+
+                    </div>
+                    <span>購物車</span>
+                </div>
+                <div class="line"></div>
+                <div class="shope">
+                    <div class="circle active">
+                        <a href="information.html">2</a>
+
+                    </div>
+                    <span>填寫資料</span>
+                </div>
+                <div class="line"></div>
+                <div class="shope">
+                    <div class="circle">
+                        <a href="finish.html">3</a>
+                    </div>
+                    <span>訂單確認</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-body ">
+
+            <p class="checkout mt-4 ">已經是會員了?登入後可方便管理訂單</p>
+            <button type="submit" class="btn checkout login mb-5"
+                onclick="window.location.href='checkout-login.html'">登入</button>
+
+            <div class="row">
+                <div class="col-sm-7 col-md-8 mt-4 mb-5">
+                    <label for="password" class="form-label checkout user">填寫個人資料</label>
+                    <div class="check"><label for="email" class="form-label">輸入電子信箱</label></div>
+                    <span class="select-cart-form">
+                        <input type="password" class="form-control form-control-sm" id="password" placeholder="須包含@">
+                    </span>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="check"><label for="firstName" class="form-label">姓氏</label></div>
+                            <input type="text" class="form-control form-control-sm" id="firstName" placeholder=""
+                                value="" required="">
+                            <div class="invalid-feedback">
+                                姓氏
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="check"><label for="firstName" class="form-label"> 名字</label></div>
+                            <input type="text" class="form-control form-control-sm" id="lastName" placeholder=""
+                                value="" required="">
+                            <div class="invalid-feedback">
+                                名字
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check"> <label for="email" class="form-label">輸入收件地址</label></div>
+                    <div>
+                        <span class="select-cart-form">
+                            <input type="password" class="form-control form-control-sm" id="password"
+                                placeholder="輸入收件地址">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <div class="check"><label for="firstName" class="form-label"> 城市</label></div>
+                            <select class="form-control form-control-sm" id="order-delivery-country" required="">
+                                <option value="">選擇...</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="check"><label for="firstName" class="form-label"> 地區</label></div>
+                            <select class="form-control form-control-sm " id="order-delivery-country" required="">
+                                <option value="">選擇...</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div class="check"><label for="firstName" class="form-label"> 區號</label></div>
+                            <input type="text" class="form-control form-control-sm" id="zip" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+                    <label for="password" class="form-label checkout user">付款資料</label>
+                    <p class="checkout">已選擇付款方式atm</p>
+                    <label for="password" class="form-label checkout user">索取發票</label>
+                    <div class=" mb-4 ">
+                        <div class="check"><label for="firstName" class="form-label">發票類型</label></div>
+                        <select class="form-control form-control-sm" id="order-delivery-country" required="">
+                            <option value="">選擇...</option>
+                            <option>雲端發票</option>
+                            <option>紙本發票</option>
+                            <option>捐贈</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                        <div class="check"><label for="firstName" class="form-label">載具類型</label></div>
+                        <select class="form-control form-control-sm" id="order-delivery-country" required="">
+                            <option value="">選擇...</option>
+                            <option>會員載具</option>
+                            <option>捐贈</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                        <div class="check"><label for="firstName" class="form-label">統一編號</label></div>
+                        <span class="select-cart-form">
+                            <input type="password" class="form-control form-control-sm" id="password"
+                                placeholder="統一編號">
+                        </span>
+
+                    </div>
+                    <label for="password" class="form-label checkout user">訂單備註</label>
+                    <textarea id="order-remarks" class="form-control" name="order[order_remarks]"
+                        placeholder="有什麼想告訴賣家嗎？" rows="3"></textarea>
+
+                </div>
+                <div class="col-sm-5 col-md-4 mt-4 mb-5"> <label for="password"
+                        class="form-label checkout user">訂單確認及注意事項</label>
+                    <form name="additionalForm" class="additional-form ng-pristine ng-valid mt-4 mb-5">
+                        <div class="form-group checkbox">
+                            <label class="control-label">
+                                <input type="checkbox" name="policy" data-e2e-id="checkout-policy_checkbox" required="">
+                                我同意網站<a class="agree-highlight forget" href="/about/terms" target="_blank">服務條款</a>及<a
+                                    class="agree-highlight forget" href="/about/privacy-policy"
+                                    target="_blank">隱私權政策</a>
+                            </label>
+                        </div>
+                        <div class="form-group checkbox signup-checkbox">
+                            <label class="control-label">
+                                <input type="checkbox" name="saveFields[all]" data-e2e-id="checkout-signup_checkbox"
+                                    checked="">
+                                <span>成為next-door會員</span>
+                            </label>
+                        </div>
+                        <div class="form-group checkbox">
+                            <label class="control-label">
+                                <input type="checkbox" name="saveFields[marketing]"
+                                    data-e2e-id="checkout-marketing_checkbox">
+                                我願意接收 next-door 的最新消息、優惠及服務推廣相關資訊
+                            </label>
+                        </div>
+                    </form>
+                    <label for="password" class="form-label checkout user">訂單金額</label>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">運費: <a>$60</a></h5>
+                        <h5 class="card-title">小計: <span class="total-amount">$0</span></h5>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <div class="input-group mb-3 mt-4 mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="輸入優惠碼"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append ">
+                                <button class="btn btn-outline-secondary" type="button">送出</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="ng-scope">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">數量: <span class="badge  rounded-pill cart-count">$0</span></h5>
+                        <h5 class="card-title">總金額: <span class="total-amount">$0</span></h5>
+                    </div>
+                    <hr class="ng-scope">
+                    <a class="nav-link info" href="#" data-bs-toggle="modal" data-bs-target="#checkoutModal"><i
+                            class="bi bi-cart"></i><span class="badge bg-danger rounded-pill cart-count"
+                            style="font-family: sans-serif;"></span>返回購物車</a>
+
+                    <a type="submit" class="btn checkout login mt-4 w-100" href="finish.html">送出訂單</a>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <my-footer></my-footer>
+</body>
+<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.3.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+
+<!-- fontawesome icons use svg+js -->
+
+<script>
+    const circles = document.querySelectorAll('.circle');
+
+    function handleClick(event) {
+        // 移除其他圆圈的 active 类
+        circles.forEach(circle => circle.classList.remove('active'));
+        // 给当前点击的圆圈添加 active 类
+        event.currentTarget.classList.add('active');
+    }
+
+    circles.forEach(circle => circle.addEventListener('click', handleClick));
+</script>
+
+</html>

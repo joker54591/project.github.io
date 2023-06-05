@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>購物網站</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huaging.com/">
+    <meta property="og:title" content="購物網站">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link href="assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+
+
+    <script src="assets/fontawesome-free-6.3.0-web/js/all.min.js"></script>
+
+
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <div class="container" id="coffe">
+        <h5 class="title mb-3">會員訂單管理及個人資料</h5>
+        <div class="card-body ">
+            <div class="row">
+                <div class="col-sm-5 col-md-3 mt-4 mb-5">
+                    <label for="password" class="form-label checkout user mx-auto">選單</label>
+                    <div class="d-block">
+                        <a class="btn checkout order login mt-4 menu-link active" href='user.html'>我的帳號</a>
+                        <a class="btn checkout order login mt-4 menu-link" href='order.html'>購買清單</a>
+                        <a class="btn checkout order login mt-4 menu-link" href='notify.html'>通知總覽</a>
+                        <a class="btn checkout order login mt-4 menu-link" href='voucher.html'>我的優惠劵</a>
+                    </div>
+                </div>
+
+                <div class="col-sm-7 col-md-6 mt-4 mb-5 ">
+                    <label class="form-label checkout user">我的檔案 管理你的檔案保護你的帳號</label>
+                    <div>
+
+
+                        <div class="check"><label for="email" class="form-label">使用者帳號</label></div>
+                        <span class="select-cart-form">
+                            <input type="text" class="form-control form-control-sm" id="password"
+                                placeholder="abc1234 不可更改">
+                        </span>
+                        <div class="check"><label for="email" class="form-label">姓名</label></div>
+                        <span class="select-cart-form">
+                            <input type="password" class="form-control form-control-sm" id="password"
+                                placeholder="請輸入姓名">
+                        </span>
+                        <div class="check"><label for="email" class="form-label">電子信箱</label></div>
+                        <span class="select-cart-form">
+                            <input type="email" class="form-control form-control-sm" id="password"
+                                placeholder="請輸入電子信箱 須包含@">
+                        </span>
+                        <div class="check"><label for="email" class="form-label">手機號碼</label></div>
+                        <span class="select-cart-form">
+                            <input type="number" class="form-control form-control-sm" id="password"
+                                placeholder="請輸入手機號碼">
+                        </span>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="check"><label for="firstName" class="form-label">出生日</label></div>
+                                <span class="select-cart-form">
+                                    <select id="order-delivery-country" data-e2e-id="order-delivery-country_select"
+                                        class="form-control form-control-sm"
+                                        ng-disabled="multiSelect &amp;&amp; state &amp;&amp; state.isCartLoading">
+                                        <option value="HN">1</option>
+                                        <option value="HK">2</option>
+                                        <option value="HU">3</option>
+                                        <option value="IS">4</option>
+                                        <option value="IS">5</option>
+                                        <option value="IS">6</option>
+                                        <option value="IS">7</option>
+                                        <option value="IS">8</option>
+                                        <option value="IS">9</option>
+                                        <option value="IS">10</option>
+                                        <option value="IS">11</option>
+                                        <option value="IS">12</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="check"><label for="firstName" class="form-label">出生月</label></div>
+                                <span class="select-cart-form">
+                                    <select id="order-delivery-country" data-e2e-id="order-delivery-country_select"
+                                        class="form-control form-control-sm"
+                                        ng-disabled="multiSelect &amp;&amp; state &amp;&amp; state.isCartLoading">
+                                        <option value="HN">1</option>
+                                        <option value="HK">2</option>
+                                        <option value="HU">3</option>
+                                        <option value="IS">4</option>
+                                        <option value="IS">5</option>
+                                        <option value="IS">6</option>
+                                        <option value="IS">7</option>
+                                        <option value="IS">8</option>
+                                        <option value="IS">9</option>
+                                        <option value="IS">10</option>
+                                        <option value="IS">11</option>
+                                        <option value="IS">12</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="check"><label for="firstName" class="form-label">出生年(西元)</label></div>
+                                <span class="select-cart-form">
+                                    <select id="order-delivery-country" data-e2e-id="order-delivery-country_select"
+                                        class="form-control form-control-sm"
+                                        ng-disabled="multiSelect &amp;&amp; state &amp;&amp; state.isCartLoading">
+                                        <option value="HN">1990</option>
+                                        <option value="HK">1991</option>
+                                        <option value="HU">1992</option>
+                                        <option value="IS">1993</option>
+                                        <option value="IS">1994</option>
+                                        <option value="IS">1995</option>
+                                        <option value="IS">1996</option>
+                                        <option value="IS">1997</option>
+                                        <option value="IS">1998</option>
+                                        <option value="IS">1999</option>
+                                        <option value="IS">2000</option>
+                                        <option value="IS">2001</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <a type="submit" class="btn checkout login mt-4 w-100" href='#'>提交資料</a>
+                </div>
+                <div class="col-sm-7 col-md-3 mt-4 mb-5 "> <label for="password"
+                        class="form-label checkout user">更換頭貼</label>
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input " id="inputGroupFile04">
+                            <label class="custom-file-label" for="inputGroupFile04">
+                            </label>
+                        </div>
+                        <div class="input-group-append w-100">
+                            <button class="btn btn-outline-secondary w-100" type="送出">送出</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <my-footer></my-footer>
+</body>
+<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.3.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+
+<!-- fontawesome icons use svg+js -->
+
+
+</html>

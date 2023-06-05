@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>購物網站</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huaging.com/">
+    <meta property="og:title" content="購物網站">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link href="assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+
+
+    <script src="assets/fontawesome-free-6.3.0-web/js/all.min.js"></script>
+
+
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <div class="container mb-1">
+
+        <div class="row">
+            <h2 class="coffe">咖啡品種分類</h2>
+            <div class="col-md-3">
+                <!-- 選單 -->
+                <div aria-label="咖啡分類">
+                    <button type="button" class="btn btn-secondary category-filter active "
+                        data-category="all">全部</button>
+                    <button type="button" class="btn btn-secondary category-filter"
+                        data-category="阿拉比卡咖啡">阿拉比卡咖啡</button>
+                    <button type="button" class="btn btn-secondary category-filter"
+                        data-category="羅布斯塔咖啡">羅布斯塔咖啡</button>
+                    <button type="button" class="btn btn-secondary category-filter" data-category="藍山咖啡">藍山咖啡</button>
+                    <button type="button" class="btn btn-secondary category-filter"
+                        data-category="哥倫比亞咖啡">哥倫比亞咖啡</button>
+                    <button type="button" class="btn btn-secondary category-filter" data-category="肯亞咖啡">肯亞咖啡</button>
+                    <button type="button" class="btn btn-secondary category-filter" data-category="印尼咖啡">印尼咖啡</button>
+                </div>
+            </div>
+            <div class="col-md-9 mb-5">
+                <!-- 商品 -->
+                <div class="row mb-1 mb-5">
+                    <div class="col-md-3 product-item" data-category="阿拉比卡咖啡">
+                        <a href="commodity-page.html" class="href">
+                            <div class="card">
+                                <a href="#card-img-top" class="favorite-button"><i class="fas fa-heart"></i> </a>
+                                <img src="images/coffe1.jpg" class="card-img-top-com " alt="阿拉比卡咖啡">
+                                <div class="card-body">
+                                    <h5 class="card-title">阿拉比卡咖啡</h5>
+                                    <p class="card-text">一種優質的咖啡豆，通常帶有花香和果香。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 product-item" data-category="羅布斯塔咖啡">
+                        <a href="commodity-page.html" class="href">
+                            <div class="card">
+                                <a href="#card-img-top" class="favorite-button"><i class="fas fa-heart"></i> </a>
+                                <img src="images/coffe1.jpg" class="card-img-top-com " alt="羅布斯塔咖啡">
+                                <div class="card-body">
+                                    <h5 class="card-title">羅布斯塔咖啡</h5>
+                                    <p class="card-text">一種較便宜的咖啡豆，通常較苦，含有較高的咖啡因。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 product-item" data-category="藍山咖啡">
+                        <a href="commodity-page.html" class="href">
+                            <div class="card">
+                                <a href="#card-img-top" class="favorite-button"><i class="fas fa-heart"></i> </a>
+                                <img src="images/coffe1.jpg" class="card-img-top-com " alt="藍山咖啡">
+                                <div class="card-body">
+                                    <h5 class="card-title">藍山咖啡</h5>
+                                    <p class="card-text">一種來自牙買加藍山山脈的高品質咖啡豆，通常帶有堅果香和巧克力香。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 product-item" data-category="哥倫比亞咖啡">
+                        <a href="commodity-page.html" class="href">
+                            <div class="card">
+                                <a href="#card-img-top" class="favorite-button"><i class="fas fa-heart"></i> </a>
+                                <img src="images/coffe1.jpg" class="card-img-top-com " alt="哥倫比亞咖啡">
+                                <div class="card-body">
+                                    <h5 class="card-title">哥倫比亞咖啡</h5>
+                                    <p class="card-text">一種來自哥倫比亞的咖啡豆，通常帶有微妙的果香和焦糖香。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 product-item" data-category="肯亞咖啡">
+                        <a href="commodity-page.html" class="href">
+                            <div class="card">
+                                <a href="#card-img-top" class="favorite-button"><i class="fas fa-heart"></i> </a>
+                                <img src="images/coffe1.jpg" class="card-img-top-com " alt="肯亞咖啡">
+                                <div class="card-body">
+                                    <h5 class="card-title">肯亞咖啡</h5>
+                                    <p class="card-text">一種來自肯亞的咖啡豆，通常帶有酸度和紅色水果香。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 product-item" data-category="印尼咖啡">
+                        <a href="commodity-page.html" class="href">
+                            <div class="card">
+                                <a href="#card-img-top" class="favorite-button"><i class="fas fa-heart"></i> </a>
+                                <img src="images/coffe1.jpg" class="card-img-top-com " alt="印尼咖啡">
+                                <div class="card-body">
+                                    <h5 class="card-title">印尼咖啡</h5>
+                                    <p class="card-text">一種來自印尼的咖啡豆，通常帶有木香和烤香。</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <nav aria-label="Page navigation example" class="Page">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <my-footer></my-footer>
+</body>
+<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.3.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<!-- fontawesome icons use svg+js -->
+<script src="js/commodity.js"></script>
+
+</script>
+
+</html>

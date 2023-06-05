@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>購物網站</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://huaging.com/">
+    <meta property="og:title" content="購物網站">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link href="assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css" rel="stylesheet">
+
+
+    <script src="assets/fontawesome-free-6.3.0-web/js/all.min.js"></script>
+
+
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <div class="container" id="coffe">
+        <h5 class="title mb-3">購物車結帳
+        </h5>
+        <div class="checkout-nav mb-4">
+            <div class="circle-container">
+                <div class="shope">
+                    <div class="circle active">
+                        <a href="checkout.html">1</a>
+
+                    </div>
+                    <span>購物車</span>
+                </div>
+                <div class="line"></div>
+                <div class="shope">
+                    <div class="circle">
+                        <a href="information.html">2</a>
+
+                    </div>
+                    <span>填寫資料</span>
+                </div>
+                <div class="line"></div>
+                <div class="shope">
+                    <div class="circle">
+                        <a href="finish.html">3</a>
+                    </div>
+                    <span>訂單確認</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-body ">
+            <label for="password" class="form-label checkout user">購物車內容</label>
+            <form>
+                <div class="modal-body mt-4">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr style="text-align: center;">
+                                    <th scope="col">商品圖</th>
+                                    <th scope="col">商品名稱</th>
+                                    <th scope="col">數量</th>
+                                    <th scope="col">單價</th>
+                                    <th scope="col">總金額</th>
+                                    <th scope="col">刪除商品</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cart-list" style="vertical-align: baseline; text-align: center;"></tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7 col-md-8 mt-4 mb-5">
+                            <label for="password" class="form-label checkout user">選擇送貨及付款方式</label>
+                            <div class="check"><label for="email" class="form-label">送貨地點</label></div>
+                            <span class="select-cart-form">
+                                <select id="order-delivery-country" data-e2e-id="order-delivery-country_select"
+                                    class="form-control form-control-sm"
+                                    ng-disabled="multiSelect &amp;&amp; state &amp;&amp; state.isCartLoading">
+                                    <option value="HN">台灣</option>
+                                    <option value="HK">中國</option>
+                                    <option value="HU">香港</option>
+                                    <option value="IS">澳門</option>
+                                </select>
+                            </span>
+                            <div class="check"><label for="email" class="form-label">送貨方式</label></div>
+                            <span class="select-cart-form">
+                                <select id="order-delivery-country" data-e2e-id="order-delivery-country_select"
+                                    class="form-control form-control-sm"
+                                    ng-disabled="multiSelect &amp;&amp; state &amp;&amp; state.isCartLoading">
+                                    <option value="622af2a1731576002f3fa08a" selected="" ng-non-bindable="">7-11
+                                        取貨不付款
+                                        (B2C)
+                                    </option>
+                                    <option value="622af2a1731576002f3fa088" ng-non-bindable="">7-11 取貨付款 (B2C)
+                                    </option>
+                                    <option value="5c242bdd2a06e10018448943" ng-non-bindable="">宅配 (新竹物流限台灣本島)
+                                    </option>
+                                    <option value="60d1a86a6432540029301c22" ng-non-bindable="">郵寄 (郵局寄送澎湖、金門、馬祖適用)
+                                    </option>
+                                    <option value="5ea6509ad02a3b001e6f3be1" ng-non-bindable="">員工自取｜宜蘭工廠專用</option>
+                                    <option value="640ad6acc073ff0017628285" ng-non-bindable="">員工寄送｜台北業務專用</option>
+                                    <option value="640ad1e5ed81b4001184cc19" ng-non-bindable="">員工自取｜台北業務專用</option>
+                                </select>
+                            </span>
+                            <div class="check"> <label for="email" class="form-label">付款方式</label></div>
+                            <span class="select-cart-form">
+                                <select id="order-delivery-country" data-e2e-id="order-delivery-country_select"
+                                    class="form-control form-control-sm"
+                                    ng-disabled="multiSelect &amp;&amp; state &amp;&amp; state.isCartLoading">
+                                    <option value="6377281ed687c1002e90b445" selected="" ng-non-bindable="">
+                                        ATM｜虛擬代碼繳費（需持代碼至實體ATM或網路銀行繳費）</option>
+                                    <option value="63632d817a8499002bd77d20" ng-non-bindable="">LINE Pay 付款</option>
+                                    <option value="6359fe997dbcd7001cde4315" ng-non-bindable="">綠界科技｜信用卡（支援Visa,
+                                        Master,
+                                        JCB）</option>
+                                    <option value="618884abc3d75e00147db997" ng-non-bindable="">Shopline
+                                        Payments-信用卡支付
+                                    </option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="col-sm-5 col-md-4 mt-4 mb-5"> <label for="password"
+                                class="form-label checkout user">訂單資訊</label>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">運費: <a>$60</a></h5>
+                                <h5 class="card-title">小計: <span class="total-amount">$0</span></h5>
+                            </div>
+                            <div class="input-group mb-3 mt-4 mb-3">
+                                <input type="text" class="form-control form-control-sm" placeholder="輸入優惠碼"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append ">
+                                    <button class="btn btn-outline-secondary" type="button">送出</button>
+                                </div>
+                            </div>
+                            <hr class="ng-scope">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">數量: <span class="badge  rounded-pill cart-count">$0</span></h5>
+                                <h5 class="card-title">總金額: <span class="total-amount">$0</span></h5>
+                            </div>
+                            <hr class="ng-scope">
+                            <a type="submit" class="btn checkout login mt-4 w-100" href='information.html'>前往結帳</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+        </div>
+        </form>
+    </div>
+    </div>
+
+
+
+    <my-footer></my-footer>
+</body>
+<script src="assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.3.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+
+<!-- fontawesome icons use svg+js -->
+
+<script>
+    const circles = document.querySelectorAll('.circle');
+
+    function handleClick(event) {
+        // 移除其他圆圈的 active 类
+        circles.forEach(circle => circle.classList.remove('active'));
+        // 给当前点击的圆圈添加 active 类
+        event.currentTarget.classList.add('active');
+    }
+
+    circles.forEach(circle => circle.addEventListener('click', handleClick));
+</script>
+
+</html>
